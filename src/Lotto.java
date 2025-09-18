@@ -33,10 +33,18 @@ public class Lotto {
         if (UserInput == RandomNum){
             System.out.println("Tillykke du har vundet 10.000 DKK\n");
         }
-        else if ((UserInput1 == RandomNum1 || UserInput1 == RandomNum2) && (UserInput2 == RandomNum1 || UserInput2 == RandomNum2)) {
+
+        else if ((UserInput1 == RandomNum1 || UserInput1 == RandomNum2)
+                &&
+                (UserInput2 == RandomNum1 || UserInput2 == RandomNum2)) {
+
             System.out.println("Tillykke du har vundet 3.000 DKK\n");
         }
-        else if ((UserInput1 == RandomNum1 || UserInput1 == RandomNum2) || (UserInput2 == RandomNum1 || UserInput2 == RandomNum2)) {
+
+        else if ((UserInput1 == RandomNum1 || UserInput1 == RandomNum2)
+                ||
+                (UserInput2 == RandomNum1 || UserInput2 == RandomNum2))
+        {
             System.out.println("Tillykke du har vundet 1.000 DKK\n");
         }
         else {
